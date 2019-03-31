@@ -97,5 +97,15 @@ ENV/
 # Training data for word embedding tutorial
 tutorials/embedding/text8
 tutorials/embedding/questions-words.txt
-
+*.zip
+*.tfrecord
+*.rar
+*.qlog
+*__MACOSX*
+*ckpt*
+*tfevent*
+research/slim/datasets/FNF/
+research/slim/datasets/FNF2/
+research/slim/datasets/food_101/
+research/slim/data/
 samples/outreach/blogs/segmentation_blogpost/carvana-image-masking-challenge/

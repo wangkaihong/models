@@ -39,6 +39,9 @@ import tensorflow as tf
 from datasets import download_and_convert_cifar10
 from datasets import download_and_convert_flowers
 from datasets import download_and_convert_mnist
+from datasets import download_and_convert_food_101
+from datasets import download_and_convert_fnf
+from datasets import download_and_convert_FNF
 
 FLAGS = tf.app.flags.FLAGS
 
@@ -65,6 +68,13 @@ def main(_):
     download_and_convert_flowers.run(FLAGS.dataset_dir)
   elif FLAGS.dataset_name == 'mnist':
     download_and_convert_mnist.run(FLAGS.dataset_dir)
+  elif FLAGS.dataset_name == 'food_101':
+    download_and_convert_food_101.run(FLAGS.dataset_dir)
+  elif FLAGS.dataset_name == 'fnf':
+    download_and_convert_fnf.run(FLAGS.dataset_dir)
+  elif FLAGS.dataset_name == 'FNF':
+    download_and_convert_fnf.run(FLAGS.dataset_dir)
+
   else:
     raise ValueError(
         'dataset_name [%s] was not recognized.' % FLAGS.dataset_name)
